@@ -1,0 +1,254 @@
+/* desktop stuff */
+body {
+  font-family: 'lato', sans-serif;
+  margin: 0px auto;
+}
+
+section {
+  padding: 3rem 1rem;
+  display: block;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  background-color: rgba(255,255,255,.8);
+  z-index: 999;
+}
+
+#header {
+  text-align: center;
+  padding: 0px 0px;
+}
+
+#header a li {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  color: rgb(200,200,200);
+  margin: 1rem 2rem;
+}
+
+#decision {
+  height: 100vh;
+}
+
+#decision h1 {
+  margin-top: 20%;
+}
+
+button.btn-yes a {
+  text-decoration: none;
+  color: #fff;
+}
+
+button.btn-yes a:hover {
+  background-color: rgb(255,255,255);
+  color: rgb(187,54,59);
+}
+
+#location {
+  height: 100vh;
+  background-color: rgb(230,230,230);
+}
+
+#location h1 {
+  margin-top: 20%;
+}
+
+#generator {
+  margin-top: 20%;
+}
+
+button.btn-answer a {
+  text-decoration: none;
+  color: #fff;
+}
+
+button.btn-answer a:hover {
+  background-color: rgb(255,255,255);
+  color: rgb(187,54,59);
+}
+
+#footer a {
+  font-size: 1rem;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: rgb(200,200,200);
+}
+
+.wrapper {
+  background-color: rgb(240,240,240);
+}
+
+.headline {
+  display: block;
+  text-align: center;
+  font-size: 3rem;
+  color: rgb(100,100,100);
+  margin: 3rem auto;
+}
+
+.sm_headline {
+  display: block;
+  text-align: center;
+  font-size: 2rem;
+  color: rgb(100,100,100);
+  margin: 3rem auto;
+}
+
+input {
+  display: block;
+  text-align: center;
+  margin: 1rem auto;
+  border: 0;
+  padding: 3rem 2rem;
+  width: 80%;
+  font-size: 2rem;
+  color: rgb(187,54,59);
+  border: 0;
+  border-radius: 40px;
+}
+
+input:focus {
+  outline: 0;
+}
+
+button {
+  display: block;
+  text-align: center;
+  margin: 2rem auto;
+  padding: 1rem 3rem;
+  border: 2px solid rgb(187,54,59);
+  border-radius: 20px;
+  background-color: rgb(187,54,59);
+  color: rgb(255,255,255);
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: rgb(255,255,255);
+  color: rgb(187,54,59);
+}
+
+button:focus {
+  outline: 0;
+}
+
+button.reset {
+  display: block;
+  text-align: center;
+  margin: 2rem auto;
+  padding: 1rem 3rem;
+  border: 2px solid rgb(187,54,59);
+  border-radius: 20px;
+  background-color: rgb(255,255,255);
+  color: rgb(187,54,0);
+  font-size: 1rem;
+  position: fixed;
+  bottom: 10px;
+  right: 40px;
+  z-index: 200;
+}
+
+button.reset a {
+  text-decoration: none;
+  color: rgb(187,54,59);
+}
+
+button.reset a:hover {
+  color: rgb(255,255,255);
+}
+
+button.reset:hover,button.back:hover {
+  background-color: rgb(187,54,59);
+  color: rgb(255,255,255);
+}
+
+button.reset:focus,button.back:focus {
+  outline: 0;
+}
+
+.card {
+  margin-top: 15%;
+  display: block;
+  position: relative;
+}
+
+.question {
+  background-color: rgb(187,54,59);
+  box-shadow: -8px 8px rgb(200,200,200);
+  padding: 2rem 3rem;
+  border-radius: 30px;
+  height: 350px;
+  width: 200px;
+  color: rgb(255,255,255);
+  font-size: 2rem;
+  line-height: 3rem;
+  font-weight: 300;
+  margin: 2rem auto;
+  z-index: 99;
+  -webkit-transform: rotateX(0deg) rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    -moz-transform: rotateX(0deg) rotateY(0deg);
+    -moz-transform-style: preserve-3d;
+    -moz-backface-visibility: hidden;
+    /* -- transition is the magic sauce for animation -- */
+    -o-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.card.flip .question {
+    z-index: 900;
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+}
+
+.answer {
+  position: relative;
+  top: -420px;
+  background-color: rgb(255,255,255);
+  box-shadow: -8px 8px rgb(200,200,200);
+  border-radius: 30px;
+  height: 350px;
+  width: 200px;
+  margin: 2rem auto;
+  color: rgb(187,54,59);
+  font-size: 2rem;
+  line-height: 3rem;
+  font-weight: 300;
+  padding: 2rem 3rem;
+  z-index: 1;
+  -webkit-transform: rotateY(-180deg);
+    -webkit-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+ 
+    -moz-transform: rotateY(-180deg);
+    -moz-transform-style: preserve-3d;
+    -moz-backface-visibility: hidden;
+    /* -- transition is the magic sauce for animation -- */
+    -o-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.card.flip .answer {
+    z-index: 100;
+    -webkit-transform: rotateX(0deg) rotateY(0deg);
+    -moz-transform: rotateX(0deg) rotateY(0deg);
+}
+
+/* tablet stuff */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px)  {
+}
+
+/* mobile phone stuff */
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px)  {
+}
